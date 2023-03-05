@@ -1,43 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Mexico from "./mexico.md";
 ---
 
 <Layout title="Trains and Frogs.">
-  <main>
-    <h1><span class="text-gradient">Trains and Frogs</span></h1>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Iceland"
-        body="Summer 2023"
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Mexico"
-        body="Winter 2022-2023"
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Kauai"
-        body="Summer 2022"
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Arizona"
-        body="Summer 2022"
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Costa Rica"
-        body="Winter 2021-2022"
-      />
-    </ul>
-  </main>
+  <!-- <main>
+    <h1><span class="text-gradient">Trains and Frogs</span></h1> -->
+  <!-- <Mexico /> -->
+  <ul role="list" class="link-card-grid">
+    <Card href="/iceland" title="Iceland" body="Summer 2023" />
+    <Card href="/mexico" title="Mexico" body="Winter 2022-2023" />
+    <Card
+      href="https://astro.build/integrations/"
+      title="Kauai"
+      body="Summer 2022"
+    />
+    <Card
+      href="https://astro.build/integrations/"
+      title="Arizona"
+      body="Summer 2022"
+    />
+    <Card
+      href="https://astro.build/integrations/"
+      title="Costa Rica"
+      body="Winter 2021-2022"
+    />
+  </ul>
+  <!-- </main> -->
 </Layout>
 
 <style>
-  main {
+  /* main {
     margin: auto;
     padding: 1.5rem;
     max-width: 90ch;
@@ -46,14 +40,14 @@ import Card from "../components/Card.astro";
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
-  }
-  .text-gradient {
+  } */
+  /* .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
-  }
+  } */
   .instructions {
     line-height: 1.6;
     margin: 1rem 0;
